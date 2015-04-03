@@ -26,6 +26,12 @@ $SPEC{':package'} = {
 $SPEC{complete_tz} = {
     v => 1.1,
     summary => 'Complete from list of timezone names',
+    description => <<'_',
+
+Currently implemented via looking at `/usr/share/zoneinfo`, so this only works
+on systems that have that.
+
+_
     args => {
         word => { schema=>'str' },
     },
