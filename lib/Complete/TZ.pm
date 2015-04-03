@@ -9,6 +9,7 @@ use warnings;
 #use Log::Any '$log';
 
 use Complete;
+use Complete::Util qw(hashify_answer);
 
 require Exporter;
 our @ISA = qw(Exporter);
@@ -46,7 +47,7 @@ sub complete_tz {
     my %args  = @_;
     my $word  = $args{word} // "";
 
-    Complete::Util::complete_file(
+    my $res = hashify_answer(Complete::Util::complete_file(
         starting_path => '/usr/share/zoneinfo',
         handle_tilde => 0,
         allow_dot => 0,
@@ -56,7 +57,9 @@ sub complete_tz {
         },
 
         word => $word,
-    );
+    ));
+    $res->{path_sep} = '/';
+    $res;
 }
 
 1;
