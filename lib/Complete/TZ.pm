@@ -8,7 +8,7 @@ use strict;
 use warnings;
 #use Log::Any '$log';
 
-use Complete;
+use Complete::Setting;
 use Complete::Util qw(hashify_answer);
 
 require Exporter;
@@ -69,4 +69,3 @@ sub complete_tz {
 
 
 =head1 SEE ALSO
-
