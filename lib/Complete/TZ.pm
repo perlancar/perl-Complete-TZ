@@ -42,12 +42,12 @@ _
     },
 };
 sub complete_tz {
-    require Complete::Util;
+    require Complete::File;
 
     my %args  = @_;
     my $word  = $args{word} // "";
 
-    my $res = hashify_answer(Complete::Util::complete_file(
+    my $res = hashify_answer(Complete::File::complete_file(
         starting_path => '/usr/share/zoneinfo',
         handle_tilde => 0,
         allow_dot => 0,
