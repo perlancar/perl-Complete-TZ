@@ -1,5 +1,12 @@
 Revision history for Complete-TZ
 
+0.06    2015-09-18 (PERLANCAR)
+
+	- No functional changes.
+
+	- Tweak Rinci metadata for CLI convenience.
+
+
 0.05    2015-09-17 (PERLANCAR)
 
 	- Adjust to Complete::Util 0.36 (complete_file() split to
