@@ -34,7 +34,7 @@ on systems that have that.
 
 _
     args => {
-        word => { schema=>'str' },
+        word => { schema=>'str', pos=>0 },
     },
     result_naked => 1,
     result => {
