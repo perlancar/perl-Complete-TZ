@@ -8,7 +8,7 @@ use strict;
 use warnings;
 #use Log::Any '$log';
 
-use Complete::Setting;
+use Complete::Common qw(:all);
 use Complete::Util qw(hashify_answer);
 
 require Exporter;
@@ -34,7 +34,7 @@ on systems that have that.
 
 _
     args => {
-        word => { schema=>'str', pos=>0 },
+        %arg_word,
     },
     result_naked => 1,
     result => {
