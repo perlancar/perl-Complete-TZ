@@ -106,6 +106,8 @@ sub complete_tz_offset {
 1;
 # ABSTRACT:
 
+=for Pod::Coverage ^(complete_tz)$
+
 =head1 DESCRIPTION
 
 
