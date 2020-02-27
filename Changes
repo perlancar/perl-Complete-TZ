@@ -1,3 +1,8 @@
+0.081   2020-02-27  Released-By: PERLANCAR; Urgency: medium
+
+	- Move list of string offsets to Sah::Schema::date::tz_offset.
+
+
 0.080   2020-02-27  Released-By: PERLANCAR; Urgency: medium
 
         - [incompatible] Rename complete_tz to complete_tz_name (old name still
